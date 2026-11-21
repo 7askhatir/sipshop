@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop the SIP collection — unisex clothing designed for everyone." />
+  <title>Shop All / SIP — Unisex Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="shop">
+
+  <div id="app-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop</span></div>
+      <h1>The <em>Shop</em></h1>
+      <p>Everyday essentials, designed for everyone.</p>
+    </section>
+
+    <section class="catalog container">
+      <div class="catalog-toolbar">
+        <div class="toolbar-left">
+          <button class="filter-toggle" id="filterToggle">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h18M6 12h12M10 19h4"/></svg>
+            Filters
+          </button>
+          <div class="catalog-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="text" id="catalogSearch" placeholder="Search products…" aria-label="Search products" />
+          </div>
+        </div>
+        <div class="toolbar-right">
+          <span class="result-count" id="resultCount"></span>
+          <select class="sort-select" id="sortSelect" aria-label="Sort products">
+            <option value="featured">Sort: Featured</option>
+            <option value="newest">Sort: Newest</option>
+            <option value="price-asc">Sort: Price — Low to High</option>
+            <option value="price-desc">Sort: Price — High to Low</option>
+            <option value="popularity">Sort: Popularity</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="filters" id="filters">
+          <div class="filters-head">
+            <h3>Filters</h3>
+            <button class="clear-filters" id="clearFilters">Clear all</button>
+          </div>
+
+          <div class="filter-group">
+            <h4>Category</h4>
+            <div class="filter-options" id="categoryFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Size</h4>
+            <div class="size-options" id="sizeFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Colour</h4>
+            <div class="color-options" id="colorFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Price</h4>
+            <div class="price-range">
+              <input type="range" id="priceRange" min="30" max="200" step="5" value="200" />
+              <div class="range-labels"><span>$30</span><span id="priceValue">$200</span></div>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <div class="catalog-grid" id="catalogGrid"></div>
+          <div class="no-results" id="noResults" style="display:none">
+            <h3>No products found</h3>
+            <p>Try adjusting your filters or search terms.</p>
+            <button class="btn btn-dark" id="resetBtn">Reset filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/details.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SIP — modern unisex essentials. No rules. No gender. Just style." />
+  <title>SIP / Unisex Studio — No Rules. No Gender. Just Style.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+
+  <div id="app-header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=80"
+             alt="Male and female models wearing unisex clothing" />
+      </div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">New Season / 2026</span>
+        <h1>
+          <span class="line"><span>No Rules.</span></span>
+          <span class="line"><span>No Gender.</span></span>
+          <span class="line"><span>Just Style.</span></span>
+        </h1>
+        <div class="hero-bottom">
+          <p class="hero-sub">Modern essentials designed for everyone. Timeless silhouettes, considered details, no boundaries.</p>
+          <a href="products.html" class="btn btn-light">Shop Now
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><i></i> Scroll to explore</div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Just Landed</span>
+          <h2>New Arrivals</h2>
+        </div>
+        <a href="products.html" class="text-link">View all
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="product-grid" id="newArrivals"></div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="section-tight container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Community Favourites</span>
+          <h2>Best Sellers</h2>
+        </div>
+        <a href="products.html" class="text-link">Shop the edit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="product-grid" id="bestSellers"></div>
+    </section>
+
+    <!-- FEATURED COLLECTION -->
+    <section class="featured reveal">
+      <div class="featured-media">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80"
+             alt="Featured collection campaign" />
+      </div>
+      <div class="featured-content">
+        <span class="eyebrow">Campaign 01 / The Every Edit</span>
+        <h2>Wear It<br/>Your Way</h2>
+        <p>A collection built around freedom. Considered staples that move between wardrobes, bodies and moments — because great style was never meant to be categorised.</p>
+        <a href="products.html?category=T-Shirts" class="btn btn-light">Explore collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section philosophy">
+      <div class="container philosophy-grid">
+        <div class="philosophy-media reveal">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1300&q=80"
+               alt="SIP studio interior" />
+          <div class="badge">Made<br/>For All</div>
+        </div>
+        <div class="philosophy-copy reveal">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2>Clothes without <em>labels.</em></h2>
+          <p>We believe style is a form of self-expression that belongs to everyone. No rules about who should wear what, no seasonal noise — just well-made pieces that feel good and last.</p>
+          <p>Every SIP garment is designed with intention: responsible materials, honest construction and a fit that flatters every body. Made to be worn, lived in and made your own.</p>
+          <div class="values">
+            <div class="value"><h4><span>✳</span> Inclusive by Design</h4><p>Unisex silhouettes made to fit and flatter every body.</p></div>
+            <div class="value"><h4><span>✳</span> Considered Materials</h4><p>Responsible fabrics chosen for feel, durability and impact.</p></div>
+            <div class="value"><h4><span>✳</span> Built to Last</h4><p>Timeless pieces that outlive trends and stay in rotation.</p></div>
+            <div class="value"><h4><span>✳</span> Honest Production</h4><p>Ethical manufacturing with fair wages and full transparency.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPAIGN GALLERY -->
+    <section class="section-tight gallery-section container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Visual Diary</span>
+          <h2>The Campaign</h2>
+        </div>
+        <a href="products.html" class="text-link">See the collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="gallery-grid reveal" id="galleryGrid"></div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container reveal">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>Join The SIP List</h2>
+        <p>Be first to know about new drops, exclusive offers and the stories behind the collection. No spam — just the good stuff.</p>
+        <form class="newsletter-form" data-newsletter>
+          <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
+          <button type="submit">Subscribe
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <small>By subscribing you agree to our privacy policy. Unsubscribe anytime.</small>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/details.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
