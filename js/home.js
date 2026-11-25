@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Marquee
   const track = document.getElementById('marqueeTrack');
   if (track) {
-    const words = ['NO RULES', 'NO GENDER', 'JUST STYLE', 'MADE FOR ALL', 'UNISEX ESSENTIALS'];
+    const words = ["THE RULES DON'T APPLY TO EVERYONE", 'MADE FOR ALL', 'UNISEX ESSENTIALS'];
     const unit = words.map((w) => `<span>${w} <i>✳</i></span>`).join('');
     track.innerHTML = unit + unit;
   }

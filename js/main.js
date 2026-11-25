@@ -24,8 +24,8 @@ function renderHeader() {
     <div class="announcement">FREE SHIPPING ON ORDERS OVER $100 <span class="announcement-dot"></span> NEW SEASON DROP AVAILABLE NOW</div>
     <header class="site-header" id="siteHeader">
       <div class="nav-wrap">
-        <a href="index.html" class="logo" aria-label="SIP home">
-          <span class="logo-mark">SIP<span class="logo-slash">/</span></span>
+        <a href="index.html" class="logo" aria-label="32% home">
+          <span class="logo-mark">32<span class="logo-slash">%</span></span>
           <span class="logo-sub">UNISEX STUDIO</span>
         </a>
         <nav class="main-nav" aria-label="Main navigation">
@@ -49,7 +49,7 @@ function renderHeader() {
         <a href="products.html">Shop <span>02</span></a>
         <a href="contact.html">Contact <span>03</span></a>
       </nav>
-      <p class="mobile-menu-foot">NO RULES. NO GENDER. JUST STYLE.</p>
+      <p class="mobile-menu-foot">THE RULES DON'T APPLY TO EVERYONE.</p>
     </div>
   `;
 
@@ -89,7 +89,7 @@ function renderFooter() {
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo footer-logo">
-            <span class="logo-mark">SIP<span class="logo-slash">/</span></span>
+            <span class="logo-mark">32<span class="logo-slash">%</span></span>
             <span class="logo-sub">UNISEX STUDIO</span>
           </a>
           <p>Clothing without labels. Designed for everyone, made to be lived in.</p>
